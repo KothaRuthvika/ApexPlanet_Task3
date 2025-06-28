@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health and Fitness Companion</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Health and Fitness Companion</h1>
+  <div class="container">
+    <!-- Quiz Section -->
+    <div class="quiz">
+      <label for="goal">Select Your Fitness Goal:</label>
+      <select id="goal">
+        <option value="lose">Lose Weight</option>
+        <option value="gain">Gain Muscle</option>
+        <option value="maintain">Stay Fit</option>
+      </select>
+      <button onclick="showSuggestion()">Get Suggestion</button>
+      <div id="suggestion" class="result"></div>
+    </div>
+
+    <!-- API Section -->
+    <div class="api-result">
+      <button onclick="fetchQuote()">Get Daily Health Tip</button>
+      <div id="apiTip" class="api-tip"></div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script src="api.js"></script>
+</body>
+</html>
