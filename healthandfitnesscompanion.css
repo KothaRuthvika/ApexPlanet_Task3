@@ -1,0 +1,44 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+  background: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+label, select, button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.result, .api-tip {
+  background: #ecf0f1;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
